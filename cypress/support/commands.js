@@ -38,3 +38,10 @@ Cypress.Commands.add("status", () => {
     url: "/status",
   });
 });
+
+Cypress.Commands.add("books", () => {
+  cy.api({
+    method: "GET",
+    url: "/books",
+  });
+});

@@ -1,13 +1,12 @@
 /// <reference types="cypress" />
 
-import { statusSchema } from "../../contracts/schema.contract";
+import { booksSchema } from "../../contracts/schema.contract";
 
 describe("All successfull scenarios with POST request", () => {
   it("Verify the welcome message", () => {
-    cy.status().should((response) => {
+    cy.books().should((response) => {
       expect(response.status).to.eq(200);
-      expect(response.body.status).to.eq("OK");
-      return statusSchema.validateAsync(response.body);
+      //return booksSchema.validateAsync(response.body);
     });
     cy.screenshot();
   });

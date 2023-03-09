@@ -4,4 +4,8 @@ const testSchema = Joi.object({
   message: Joi.string().required().allow(""),
 });
 
-export default { testSchema };
+const statusSchema = Joi.object({
+  status: Joi.string().required().allow(""),
+});
+
+export default { testSchema, statusSchema };

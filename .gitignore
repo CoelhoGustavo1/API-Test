@@ -4,6 +4,7 @@
 /dist
 /tmp
 /out-tsc
+videos/
 
 # Runtime data
 pids

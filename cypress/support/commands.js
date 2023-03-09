@@ -31,3 +31,10 @@ Cypress.Commands.add("welcome", () => {
     url: "/",
   });
 });
+
+Cypress.Commands.add("status", () => {
+  cy.api({
+    method: "GET",
+    url: "/status",
+  });
+});

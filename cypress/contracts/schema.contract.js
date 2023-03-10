@@ -15,4 +15,15 @@ const booksSchema = Joi.object({
   available: Joi.boolean().required().allow(""),
 });
 
-export default { welcomeSchema, statusSchema, booksSchema };
+const bookID = Joi.object({
+  id: Joi.number().required().allow(""),
+  name: Joi.string().required().allow(""),
+  author: Joi.string().required().allow(""),
+  isbn: Joi.number().required().allow(""),
+  type: Joi.string().required().allow(""),
+  price: Joi.number().required().allow(""),
+  "current-stock": Joi.number().required().allow(""),
+  available: Joi.boolean().required().allow(""),
+});
+
+export default { welcomeSchema, statusSchema, booksSchema, bookID };

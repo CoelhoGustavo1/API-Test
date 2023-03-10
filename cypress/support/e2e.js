@@ -15,6 +15,10 @@
 
 // Import commands.js using ES2015 syntax:
 import "./commands";
+import "./requests/bookID";
+import "./requests/books";
+import "./requests/status";
+import "./requests/welcome";
 import "cypress-plugin-api";
 
 // Alternatively you can use CommonJS syntax:

@@ -2,8 +2,8 @@
 
 import { statusSchema } from "../../contracts/schema.contract";
 
-describe("All successfull scenarios with POST request", () => {
-  it("Verify the welcome message", () => {
+describe("Status", () => {
+  it("Returns the status of the API.", () => {
     cy.status().should((response) => {
       expect(response.status).to.eq(200);
       expect(response.body.status).to.eq("OK");

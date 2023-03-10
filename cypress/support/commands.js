@@ -23,25 +23,3 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-
-//GET COMMANDS
-Cypress.Commands.add("welcome", () => {
-  cy.api({
-    method: "GET",
-    url: "/",
-  });
-});
-
-Cypress.Commands.add("status", () => {
-  cy.api({
-    method: "GET",
-    url: "/status",
-  });
-});
-
-Cypress.Commands.add("books", () => {
-  cy.api({
-    method: "GET",
-    url: "/books",
-  });
-});

@@ -18,6 +18,7 @@ import "./commands";
 import "./requests/bookID";
 import "./requests/books";
 import "./requests/status";
+import "./requests/update";
 import "./requests/welcome";
 import "cypress-plugin-api";
 

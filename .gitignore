@@ -1,10 +1,14 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
+# folders
+videos/
+screenshots/
+
 # compiled output
 /dist
 /tmp
 /out-tsc
-videos/
+
 
 # Runtime data
 pids

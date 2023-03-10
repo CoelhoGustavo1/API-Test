@@ -2,7 +2,7 @@
 
 import { welcomeSchema } from "../../contracts/schema.contract";
 
-describe("All successfull scenarios with POST request", () => {
+describe("All successfull scenarios with GET request", () => {
   it("Verify the welcome message", () => {
     cy.welcome().should((response) => {
       expect(response.status).to.eq(200);
